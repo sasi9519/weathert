@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body onload="DefaultScreen()">
+        <div class="center" style="display:flex;flex-direction:column;align-items: center;">
+        <h1 id="Para1">5 Days Weather Forecast</h1>
+        <!-- <p >City: <input type="text" ></p> -->
+
+        <div class="form-group" id="inputContainer">
+            <span>City: </span>
+            <input class="form-field"id="cityInput" type="text" >
+        </div>
+        <!-- <button type="button"  style="width: fit-content;">Click Me</button> -->
+        
+        <button type="button" class="button" onclick="GetInfo()">
+            <span class="button__text">Get Info</span>
+            <span class="button__icon">
+                <ion-icon name="cloud-download-outline"></ion-icon>
+            </span>
+        </button>
+       </div>
+    
+    
+    <div id = "weatherContainer">
+        <div id="iconsContainer">    
+            <div class = "icons glass" >
+                <p class="weather" id="day1"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img1"></div>
+                <p class="minValues" id="day1Min">Loading...</p>
+                <p class="maxValues" id="day1Max">Loading...</p>
+            </div>
+            <div class = "icons glass">
+                <p class="weather" id="day2"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img2"></div>
+                <p class="minValues" id="day2Min">Loading...</p>
+                <p class="maxValues" id="day2Max">Loading...</p>
+            </div>
+            <div class = "icons glass">
+                <p class="weather" id="day3"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img3"></div>
+                <p class="minValues" id="day3Min">Loading...</p>
+                <p class="maxValues" id="day3Max">Loading...</p>
+            </div>
+            <div class = "icons glass">
+                <p class="weather" id="day4"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img4"></div>
+                <p class="minValues" id="day4Min">Loading...</p>
+                <p class="maxValues" id="day4Max">Loading...</p>
+            </div>
+            <div class = "icons glass">
+                <p class="weather" id="day5"></p>
+                <div class="image"><img src="dots.png" class="imgClass" id="img5"></div>
+                <p class="minValues" id="day5Min">Loading...</p>
+                <p class="maxValues" id="day5Max">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+
+        <script src="main.js"></script>
+
+
+</body>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</html>
